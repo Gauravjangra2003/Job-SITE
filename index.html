@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Job Portal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!--Icons cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Swiper-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!--Navbar-->
+
+    <div class="navbar">
+        <h2 class="navbar-logo"><a href="#">JOBACT</a></h2>
+        <div class="navbar-menu">
+            <a href="#jobs">Jobs</a>
+            <a href="#companies">Companies</a>
+            <a href="#testimoni">Testimonial</a>
+            <a href="#blog">Blog</a>
+            <a href="#">Sign In</a>
+        </div>
+
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </h2>
+    </div>
+
+    <!--Header-->
+
+    <header>
+        <h1 class="header-title">
+            FIND YOUR <br> <span>PERFECT JOB</span> <br> EASILY
+        </h1>
+    </header>
+
+    <!--Search-->
+
+    <div class="search-wrapper">
+        <div class="search-box">
+            <div class="search-card">
+                <input class="search-input" type="text" placeholder="Job title or keywords">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Filter Box-->
+
+    <div class="filter-box">
+        <div class="filter-dropdown">
+            <select class="filter-select" name="Job-Level" id="Job-Level">
+                <option value="">Job Level</option>
+                <option value="">Entry</option>
+                <option value="">Mid-Senior</option>
+                <option value="">Director</option>
+            </select>
+
+            <select class="filter-select" name="Job-Function" id="Job-Funtion">
+                <option value="">Job Function</option>
+                <option value="">IT</option>
+                <option value="">Management</option>
+                <option value="">Education</option>
+            </select>
+
+            <select class="filter-select" name="Employment" id="Employment">
+                <option value="">Employment Tyoe</option>
+                <option value="">Internship</option>
+                <option value="">Part Time</option>
+                <option value="">Full Time</option>
+            </select>
+
+            <select class="filter-select" name="Location" id="Location">
+                <option value="">Loactions</option>
+                <option value="">Remote</option>
+                <option value="">US</option>
+                <option value="">UK</option>
+            </select>
+
+            <select class="filter-select" name="Education" id="Education">
+                <option value="">Education</option>
+                <option value="">High-School</option>
+                <option value="">Bachelor's Degree</option>
+                <option value="">Master's Degree</option>
+            </select>
+
+        </div>
+
+        <div class="filter-chosen">
+            <div class="chosen-card">
+                Remote <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Full Time <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Financial Tech <i class="fas fa-times-circle"></i>
+            </div>
+            <div class="chosen-card">
+                Entry Level <i class="fas fa-times-circle"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--Job Listing-->
+
+    <section class="job-list" id="jobs">
+        <div class="job-card">
+            <div class="job-name">
+                <img src="Tesla.jpg" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Tesla</h4>
+                    <h3>Mechanical Engineer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 mins ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="ebay.webp" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Ebay</h4>
+                    <h3>Business Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 mins ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="tiktok.jpg" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>TikTok</h4>
+                    <h3>Digital Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted 2 mins ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="youtube.png" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Youtube</h4>
+                    <h3>UI UX Designer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted an hour ago
+            </div>
+        </div>
+
+        <div class="job-card">
+            <div class="job-name">
+                <img src="amazon.webp" alt="" class="job-profile">
+                <div class="job-detail">
+                    <h4>Amazon</h4>
+                    <h3>Software Engineer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="job-label">
+                <a href="#" class="label-a">HTML</a>
+                <a href="#" class="label-b">CSS</a>
+                <a href="#" class="label-c">Javascript</a>
+            </div>
+            <div class="job-posted">
+                Posted an hour ago
+            </div>
+        </div>
+
+        <button class="job-more">More List</button>
+
+    </section>
+
+    <!--Join-->
+
+    <section class="join">
+        <div class="join-detail">
+            <h1 class="section-title">LETS START YOUR NEW JOB WITH US</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus atque voluptate nostrum! Sequi
+                exercitationem inventore beatae, consequatur delectus.</p>
+        </div>
+        <button class="join-button">Join Now</button>
+    </section>
+
+    <!--Featured company-->
+
+    <section class="featured" id="companies">
+        <h1 class="section-title">Featured Companies</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ducimus autem consectetur quaerat cumque beatae
+            vitae ut reprehende.</p>
+        <div class="featured-wrapper">
+            <div class="featured-card">
+                <img src="ebay.webp" alt="" class="featured-image">
+                <p>Ebay</p>
+                <button class="featured-button">View 2 Jobs</button>
+            </div>
+
+            <div class="featured-card">
+                <img src="youtube.png" alt="" class="featured-image">
+                <p>YouTube</p>
+                <button class="featured-button">View 1 Jobs</button>
+            </div>
+
+            <div class="featured-card">
+                <img src="tiktok.jpg" alt="" class="featured-image">
+                <p>TikTok</p>
+                <button class="featured-button">View 3 Jobs</button>
+            </div>
+
+            <div class="featured-card">
+                <img src="Tesla.jpg" alt="" class="featured-image">
+                <p>Tesla</p>
+                <button class="featured-button">View 2 Jobs</button>
+            </div>
+
+            <div class="featured-card">
+                <img src="google.jpg" alt="" class="featured-image">
+                <p>Google</p>
+                <button class="featured-button">View 2 Jobs</button>
+            </div>
+
+            <div class="featured-card">
+                <img src="facebook.webp" alt="" class="featured-image">
+                <p>FaceBook</p>
+                <button class="featured-button">View 4 Jobs</button>
+            </div>
+
+            <div class="featured-card">
+                <img src="apple.webp" alt="" class="featured-image">
+                <p>Apple</p>
+                <button class="featured-button">View 1 Jobs</button>
+            </div>
+
+            <div class="featured-card">
+                <img src="amazon.webp" alt="" class="featured-image">
+                <p>Amazon</p>
+                <button class="featured-button">View 3 Jobs</button>
+            </div>
+
+            <div class="featured-card">
+                <img src="dell.jpg" alt="" class="featured-image">
+                <p>Dell</p>
+                <button class="featured-button">View 5 Jobs</button>
+            </div>
+
+            <div class="featured-card">
+                <img src="microsoft.jpg" alt="" class="featured-image">
+                <p>Microsoft</p>
+                <button class="featured-button">View 2 Jobs</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Testimoni-->
+
+    <section class="testimoni" id="testimoni">
+        <h1 class="section-title">Testimonial</h1>
+        <p>Lets see What our Client say about us</p>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, fugit repellat ipsam atque
+                        sint odit pariatur enim consectetur quasi, iste fugiat. Molestiae nulla cumque.</h3>
+                </div>
+                <div class="testimoni-pic">
+                    <img src="pic-1.png" alt="">
+                    <p>Jhon Smith</p>
+                    <span>Business Development</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, fugit repellat ipsam atque
+                        sint odit pariatur enim consectetur quasi, iste fugiat. Molestiae nulla cumque.</h3>
+                </div>
+                <div class="testimoni-pic">
+                    <img src="pic-2.png" alt="">
+                    <p>Taylor Tama</p>
+                    <span>Data Analyst</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, fugit repellat ipsam atque
+                        sint odit pariatur enim consectetur quasi, iste fugiat. Molestiae nulla cumque.</h3>
+                </div>
+                <div class="testimoni-pic">
+                    <img src="pic-3.png" alt="">
+                    <p>Peter</p>
+                    <span>Product Analyst</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, fugit repellat ipsam atque sint odit pariatur enim consectetur quasi, iste fugiat. Molestiae nulla cumque.</h3>
+                </div>
+                <div class="testimoni-pic">
+                    <img src="pic-4.png" alt="">
+                    <p>Julia Robert</p>
+                    <span>Logostic Director</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <i class="fas fa-quote-left"></i>
+                    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, fugit repellat ipsam atque sint odit pariatur enim consectetur quasi, iste fugiat. Molestiae nulla cumque.</h3>
+                </div>
+                <div class="testimoni-pic">
+                    <img src="pic-5.png" alt="">
+                    <p>Albert John</p>
+                    <span>Marketing Officer</span>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+    <!--Blog-->
+
+    <section class="blog" id="blog">
+        <h1 class="section-title">Career Advice</h1>
+        <p>Learn more career tips from company's recruiter</p>
+        <div class="blog-wrapper">
+            <div class="blog-card">
+                <img src="blog1.jpg" alt="" class="blog-image">
+                <div class="blog-detail">
+                    <span>11 nov 2022</span>
+                    <h4>How to enjoy your work</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <hr class="divider">
+                    <a href="" class="blog-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="blog2.jpg" alt="" class="blog-image">
+                <div class="blog-detail">
+                    <span>11 nov 2022</span>
+                    <h4>10 Tips for Technical Interview</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <hr class="divider">
+                    <a href="" class="blog-more">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="blog3.jpg" alt="" class="blog-image">
+                <div class="blog-detail">
+                    <span>21 nov 2022</span>
+                    <h4>Managing Time Effectively</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <hr class="divider">
+                    <a href="" class="blog-more">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer>
+        <div class="footer-wrapper">
+            <h3>JOBACT</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, earum? Iste perspiciatis quam sit laboriosam ipsa cupiditate libero ullam dolore!</p>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-wrapper">
+            <h4>Explore</h4>
+            <a href="#">Top Companies</a>
+            <a href="#">Term of Services</a>
+            <a href="#">Podcast</a>
+            <a href="#">Careers</a>
+        </div>
+
+        <div class="footer-wrapper">
+            <h4>About</h4>
+            <a href="#">FAQ</a>
+            <a href="#">Get Inspired</a>
+            <a href="#">Blog</a>
+        </div>
+
+        <div class="footer-wrapper">
+            <h4>Support</h4>
+            <a href="#">Customer Service</a>
+            <a href="#">Trust & Safety</a>
+            <a href="#">Partnership</a>
+        </div>
+
+        <div class="footer-wrapper">
+            <h4>Community</h4>
+            <a href="#">Community</a>
+            <a href="#">Invite a Friend</a>
+            <a href="#">Event</a>
+        </div>
+
+    </footer>
+    
+    <!--java script-->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
